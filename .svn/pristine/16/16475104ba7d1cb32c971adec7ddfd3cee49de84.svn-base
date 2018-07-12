@@ -1,0 +1,23 @@
+<extension>
+<id>com.spring.purchaseorder</id>
+<name>淘宝买家订单</name>
+<show_icon>true</show_icon>
+<description>导出淘宝已买订单生成excel表格</description>
+<popup page="popup.html" width="200" height="500"/>
+<background page="background.html"/>
+<content_scripts> 
+	<content_script>
+		<match>*://*.taobao.com/*</match>
+		<match>*://*.tmall.com/*</match>
+		<css>style/style.css</css>
+		<js>scripts/jquery-1.9.1.min.js</js>
+		<js>scripts/Blob.js</js>
+		<js>scripts/FileServer.js</js>
+		<js>scripts/tableExport.js</js>
+		<js>scripts/background.js</js>
+	</content_script>
+</content_scripts>
+<version>1.0.0.01</version>
+<request_api_version>1</request_api_version>
+<author>zhoubinglin</author>
+</extension>
