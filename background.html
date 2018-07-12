@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+function htmlLoad(){
+	var text = '';
+	for(var i = 0 ; i<100 ; i++){
+		text += "背后运行"+i;
+	}
+	localStorage.htmlText = text;
+}
+	
+</script>
+<body onload="htmlLoad()">
+	
+</body>
+</html>
